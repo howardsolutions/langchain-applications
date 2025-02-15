@@ -1,0 +1,52 @@
+[
+    {
+        "label": "PromptTemplate",
+        "importPath": "langchain_core.prompts",
+        "description": "langchain_core.prompts",
+        "isExtraImport": true,
+        "detail": "langchain_core.prompts",
+        "documentation": {}
+    },
+    {
+        "label": "ChatOllama",
+        "importPath": "langchain_ollama",
+        "description": "langchain_ollama",
+        "isExtraImport": true,
+        "detail": "langchain_ollama",
+        "documentation": {}
+    },
+    {
+        "label": "StrOutputParser",
+        "importPath": "langchain.output_parsers",
+        "description": "langchain.output_parsers",
+        "isExtraImport": true,
+        "detail": "langchain.output_parsers",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "information",
+        "kind": 5,
+        "importPath": "ice_breaker",
+        "description": "ice_breaker",
+        "peekOfCode": "information = \"\"\"\nElon Reeve Musk (born June 28, 1971) is a businessman and U.S. special government employee, best known for his key roles in Tesla, Inc., SpaceX, and the Department of Government Efficiency (DOGE), and his ownership of Twitter. Musk is the wealthiest individual in the world; as of February 2025, Forbes estimates his net worth to be US$397 billion.\n\"\"\"\nif __name__ == '__main__':\n    load_dotenv()\n    os.environ[\"LANGCHAIN_TRACING_V2\"] = \"false\"\n    print(\"Hello Langchain\")\n    summary_template = \"\"\"\n    given the information {information} about a person from I want you to create:\n    1. a short summary ",
+        "detail": "ice_breaker",
+        "documentation": {}
+    }
+]
