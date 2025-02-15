@@ -5,13 +5,13 @@ from dotenv import load_dotenv
 import os 
 
 information = """
-
+Elon Reeve Musk (born June 28, 1971) is a businessman and U.S. special government employee, best known for his key roles in Tesla, Inc., SpaceX, and the Department of Government Efficiency (DOGE), and his ownership of Twitter. Musk is the wealthiest individual in the world; as of February 2025, Forbes estimates his net worth to be US$397 billion.
 """
 
 if __name__ == '__main__':
     load_dotenv()
+    os.environ["LANGCHAIN_TRACING_V2"] = "false"
     print("Hello Langchain")
-    # print(os.environ['OPENAI_API_KEY'])
 
     summary_template = """
     given the information {information} about a person from I want you to create:
@@ -28,3 +28,5 @@ if __name__ == '__main__':
     chain = summary_prompt_template | llm
     
     res = chain.invoke(input={"information": information })
+    
+    print(res)
