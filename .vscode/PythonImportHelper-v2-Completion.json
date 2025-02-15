@@ -1,26 +1,20 @@
 [
     {
-        "label": "PromptTemplate",
-        "importPath": "langchain_core.prompts",
-        "description": "langchain_core.prompts",
+        "label": "os",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "langchain_core.prompts",
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
         "documentation": {}
     },
     {
-        "label": "ChatOllama",
-        "importPath": "langchain_ollama",
-        "description": "langchain_ollama",
+        "label": "requests",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "langchain_ollama",
-        "documentation": {}
-    },
-    {
-        "label": "StrOutputParser",
-        "importPath": "langchain.output_parsers",
-        "description": "langchain.output_parsers",
-        "isExtraImport": true,
-        "detail": "langchain.output_parsers",
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
         "documentation": {}
     },
     {
@@ -32,21 +26,44 @@
         "documentation": {}
     },
     {
-        "label": "os",
-        "kind": 6,
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
         "isExtraImport": true,
-        "importPath": "os",
-        "description": "os",
-        "detail": "os",
+        "detail": "dotenv",
         "documentation": {}
     },
     {
-        "label": "information",
-        "kind": 5,
-        "importPath": "ice_breaker",
-        "description": "ice_breaker",
-        "peekOfCode": "information = \"\"\"\nElon Reeve Musk (born June 28, 1971) is a businessman and U.S. special government employee, best known for his key roles in Tesla, Inc., SpaceX, and the Department of Government Efficiency (DOGE), and his ownership of Twitter. Musk is the wealthiest individual in the world; as of February 2025, Forbes estimates his net worth to be US$397 billion.\n\"\"\"\nif __name__ == '__main__':\n    load_dotenv()\n    os.environ[\"LANGCHAIN_TRACING_V2\"] = \"false\"\n    print(\"Hello Langchain\")\n    summary_template = \"\"\"\n    given the information {information} about a person from I want you to create:\n    1. a short summary ",
-        "detail": "ice_breaker",
+        "label": "PromptTemplate",
+        "importPath": "langchain_core.prompts",
+        "description": "langchain_core.prompts",
+        "isExtraImport": true,
+        "detail": "langchain_core.prompts",
+        "documentation": {}
+    },
+    {
+        "label": "ChatOpenAI",
+        "importPath": "langchain_openai",
+        "description": "langchain_openai",
+        "isExtraImport": true,
+        "detail": "langchain_openai",
+        "documentation": {}
+    },
+    {
+        "label": "scrape_linkedin_profile",
+        "importPath": "third_parties.linkedin",
+        "description": "third_parties.linkedin",
+        "isExtraImport": true,
+        "detail": "third_parties.linkedin",
+        "documentation": {}
+    },
+    {
+        "label": "scrape_linkedin_profile",
+        "kind": 2,
+        "importPath": "third_parties.linkedin",
+        "description": "third_parties.linkedin",
+        "peekOfCode": "def scrape_linkedin_profile(linked_in_profile_url: str, mock: bool = False):\n    \"\"\" \n        scrape information from Linkedin profiles, \n        Manually scrape the information from the linked in profile\n    \"\"\"\n    if mock:\n        linked_in_profile_url = \"https://gist.githubusercontent.com/emarco177/859ec7d786b45d8e3e3f688c6c9139d8/raw/5eaf8e46dc29a98612c8fe0c774123a7a2ac4575/eden-marco-scrapin.json\"\n        response = requests.get(\n            linked_in_profile_url,\n            timeout=10",
+        "detail": "third_parties.linkedin",
         "documentation": {}
     }
 ]
